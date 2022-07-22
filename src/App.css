@@ -1,0 +1,158 @@
+*{
+  font-family:Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+body{
+  margin: 0;
+  padding: 0;
+  background-color: blueviolet;
+}
+.App{
+  flex-direction: row-reverse;
+}
+h1{
+  font-size: 26px;
+  margin: 0;
+}
+.disflex{
+  display: flex;
+}
+.contFormCont{
+  justify-content: center;
+  background-color: white;
+  display: flex;
+  padding-bottom: 38px;
+  border-radius: 0 0 30px 30px ;
+}
+form{
+  padding-right: 5px;
+}
+.formCont , .listCont{
+  padding: 15px;
+  box-sizing: border-box;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.formCont, .listCont {
+  background-color: white;
+}
+
+.inputCont{
+  align-items: center;
+  margin-bottom: 0.8rem;
+}
+.namesCont{
+  width: 100%;
+  flex-wrap: wrap;
+}
+.namesCont input{
+  margin: 10px 0px 0 0;  
+}
+input{
+  width: 100%;
+  padding: 0.4rem;
+}
+.iconCont{
+  padding-right: 1rem;
+  width: 20px;
+  box-sizing: border-box;
+  margin-right: 15px;
+}
+i{
+  font-size: 19px;
+}
+.submitsCont{
+  justify-content: center;
+}
+.submitsCont button{
+  padding: 15px;
+  width: 150px;
+  margin: 8px;
+  border: none;
+  color: white
+}
+.bCreate{
+  background-color: rgb(131, 186, 49);
+}
+.bCreate:hover{
+  background-color: rgb(96, 160, 0);
+}
+.bCancel{
+  background-color: red;
+}
+.bCancel:hover{
+  background-color: rgb(200, 1, 1);
+}
+.userInfo{
+  flex-direction: column;
+  width: 70%;
+}
+.userInfo span{
+  margin-bottom: 10px;
+}
+ul{
+  width: 100%;
+  margin: 0 auto;
+  overflow-x: auto;
+}
+.listCont{
+  width:100%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-radius: 20px;
+}
+.listContGeneral{
+  margin: 0 auto;
+
+  
+}
+
+.options button{
+  background: none;
+  border: 0;
+  margin-right: 20px;
+  cursor: pointer;
+}
+.options button i:hover{
+  color:red
+}
+@media (min-width: 576px){
+  .formCont, .listContGeneral{
+    max-width: 576px;
+  }
+  .listCont{
+    padding: 30px;
+  }
+  .namesCont{
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+  .namesCont input{
+    width: 40%;
+  }
+}
+@media(min-width: 992px){
+  .App{
+    display: flex;
+    justify-content: center;
+  }
+  .contFormCont{
+    width: 60%;
+    padding: 30px;
+  }
+  .listContGeneral{
+    height: 100vh;
+    padding: 20px;
+  }
+
+  .formCont{
+    max-width: none;
+  }
+@media(min-width: 999px){
+  .contFormCont{
+    max-width: 490px;
+  }
+
+}
+}
